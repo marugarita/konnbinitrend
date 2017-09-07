@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Newproducts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Products name</th>
+      <th>Stor name：string</th>
+      <th>Release date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @newproducts.each do |newproduct| %>
+      <tr>
+        <td><%= newproduct.products_name %></td>
+        <td><%= newproduct.stor_name：string %></td>
+        <td><%= newproduct.release_date %></td>
+        <td><%= link_to 'Show', newproduct %></td>
+        <td><%= link_to 'Edit', edit_newproduct_path(newproduct) %></td>
+        <td><%= link_to 'Destroy', newproduct, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Newproduct', new_newproduct_path %>

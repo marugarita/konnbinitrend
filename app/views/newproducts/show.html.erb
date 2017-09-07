@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Products name:</strong>
+  <%= @newproduct.products_name %>
+</p>
+
+<p>
+  <strong>Stor name：string:</strong>
+  <%= @newproduct.stor_name：string %>
+</p>
+
+<p>
+  <strong>Release date:</strong>
+  <%= @newproduct.release_date %>
+</p>
+
+<%= link_to 'Edit', edit_newproduct_path(@newproduct) %> |
+<%= link_to 'Back', newproducts_path %>

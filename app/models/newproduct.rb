@@ -1,0 +1,2 @@
+class Newproduct < ApplicationRecord
+end
